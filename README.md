@@ -9,6 +9,7 @@ The submission validates the platform’s operation through the successful detec
 
 Architecture Overview
 The project utilizes a client-server architecture hosted on VMware Workstation:
-    Manager/Server: Kali Linux VM running the Wazuh Manager, Indexer (Elasticsearch), and Dashboard.
-    Endpoint: Windows 10 VM running the Wazuh Agent for event monitoring.
+1. Manager/Server: Kali Linux VM running the Wazuh Manager, Indexer (Elasticsearch), and Dashboard.
+2. Endpoint: Windows 10 VM running the Wazuh Agent for event monitoring.
+
 
