@@ -1,12 +1,14 @@
-Description
-This is a minor cybersecurity project that provides a command-line utility to analyze the strength of a password. The script evaluates a password based on several common security criteria, including length, and the presence of uppercase letters, lowercase letters, numbers, and special characters. It then provides a clear strength rating and specific feedback to the user on how to improve their password.
+SIEM Implementation (Wazuh) - Major Project Submission
+Project Description
+This major cybersecurity project details the end-to-end deployment, configuration, and validation of a functional Security Information and Event Management (SIEM) platform built using Wazuh (v4.14.0) and supporting infrastructure. The core purpose of the project was to create a resilient monitoring solution capable of real-time log aggregation and advanced threat correlation across virtualized systems.
 
-How to run:
--Ensure you have Python installed. This script requires Python 3.
--Navigate to the src directory of the project in your terminal.
--Run the script from the command line:
-    Bash
-    python password_analyzer.py
-    
-You will be prompted to enter a password, which will not be visible as you type, for security.
+The submission validates the platform’s operation through the successful detection and analysis of three critical security scenarios:
+1. Log Correlation: Identifying a high-severity Brute Force attack.
+2. Vulnerability Management: Detecting a critical CWE-416 flaw on the Windows endpoint.
+3. Host Integrity: Monitoring for anomalies on the Manager host itself.
+
+Architecture Overview
+The project utilizes a client-server architecture hosted on VMware Workstation:
+    Manager/Server: Kali Linux VM running the Wazuh Manager, Indexer (Elasticsearch), and Dashboard.
+    Endpoint: Windows 10 VM running the Wazuh Agent for event monitoring.
 
